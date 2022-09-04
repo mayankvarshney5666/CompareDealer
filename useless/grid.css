@@ -1,0 +1,23 @@
+h1 {
+    margin: 50px 50px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(20, 9, 9);
+    font-size: 2rem;
+
+}
+
+.column1 {
+
+    margin: 40px 40px;
+    padding: 40px 40px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(20, 9, 9);
+    font-size: 2rem;
+}
+
+img:hover {
+    transform: scale(1.2);
+    margin: 50px;
+}

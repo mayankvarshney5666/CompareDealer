@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Laptop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <style>
+        td>img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+        }
+
+        /* th>td {
+            padding: 5px;
+            margin: 15px;
+        } */
+        /* table,
+        td {
+            border: 1px solid black;
+            padding: 100px;
+            margin: 50px;
+        } */
+        .navbar .nav-link {
+            /* font-size: 14px; */
+            text-transform: uppercase;
+            padding-left: 14px !important;
+            padding-right: 14px !important;
+        }
+
+        .navbar-toggler {
+            outline: none !important;
+        }
+
+        .bg-black {
+            background: #000;
+        }
+
+        iframe {
+            margin-top: 20px;
+        }
+    </style>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--Nav-->
+    <nav class="navbar fixed- navbar-expand-sm navbar-dark bg-black">
+        <div class="container">
+            <a href="./homepage_.html" class="navbar-brand">Campare Dealer</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="./homepage_.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a href="#" class="nav-link">Services</a>
+                            </li> -->
+                    <li class="nav-item">
+                        <a href="./product_p.html" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./aboutUs.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contact__.htm" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a href="./product_p.html" class="nav-link"><i class="fas fa-shopping-cart fa-2x"></i></a> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--End of NAv-->
+
+
+    <h1 class="display-5 text-center my-5 green">Campare Laptop by Selection</h1>
+    <!-- <div class="container"> -->
+    <div class="col-md-12 mx-auto">
+        <table class="table">
+            <tr class="bg-light">
+                <th>Select Product</th>
+                <td width="30%">
+                    <select class="form-control" id="slct1" onchange="item1
+                        (this.value)">
+                        <option value="0"> Select---</option>
+                    </select>
+                </td>
+                <td width="30%">
+                    <select class="form-control" id="slct2" onchange="item2
+                        (this.value)">
+                        <option value="0">
+                            Select---
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <tr class="bg-light">
+                <th width="20%">Laptop Images</th>
+                <td>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTLFG5jFe5HQXGP1z3HZrTYGRP0hA9My8iAg&usqp=CAU"
+                        alt="img here" id="img1">
+                </td>
+                <td>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTLFG5jFe5HQXGP1z3HZrTYGRP0hA9My8iAg&usqp=CAU"
+                        alt="img here" id="img2">
+                </td>
+            </tr>
+            <tr class="bg-light">
+                <th>Name</th>
+                <td id="name1">- </td>
+                <td id="name2"> -</td>
+            </tr>
+            <tr class="bg-light">
+                <th>Brand</th>
+                <td id="brand1">- </td>
+                <td id="brand2"> -</td>
+            </tr>
+            <tr class="bg-light">
+                <th>Model</th>
+                <td id="model1">- </td>
+                <td id="model2"> -</td>
+            </tr>
+            <tr class="bg-light">
+                <th>Price(in Rs.)</th>
+                <td id="price1">- </td>
+                <td id="price2"> -</td>
+            </tr>
+            <tr class="bg-light">
+                <th>Operating System</th>
+                <td id="os1">- </td>
+                <td id="os2"> -</td>
+            </tr>
+            <tr class="bg-light">
+                <th>Battery</th>
+                <td id="batry1">- </td>
+                <td id="batry2"> -</td>
+            </tr>
+            <tr class="bg-light">
+                <th>USB Type</th>
+                <td id="usb-t1">- </td>
+                <td id="usb-t2"> -</td>
+            </tr>
+            <tr class="bg-light">
+                <th>Fast Charging</th>
+                <td id="fast-charge1">- </td>
+                <td id="fast-charge2"> -</td>
+            </tr>
+            <tr class="bg-light">
+                <th>Storage</th>
+                <td id="storage1">- </td>
+                <td id="storage2"> -</td>
+            </tr>
+            <tr class="bg-light">
+                <th>RAM</th>
+                <td id="ram1">- </td>
+                <td id="ram2"> -</td>
+            </tr>
+            <tr class="bg-light">
+                <th>Camera</th>
+                <td id="camera1">- </td>
+                <td id="camera2"> -</td>
+            </tr>
+            <tr class="bg-light">
+                <th>5G Connectivity</th>
+                <td id="5g1">- </td>
+                <td id="5g2"> -</td>
+            </tr>
+            <tr class="bg-light">
+                <th>Screen Refresh Rate</th>
+                <td id="rr1">- </td>
+                <td id="rr2"> -</td>
+            </tr>
+            <tr class="bg-light">
+                <th>Product Weight</th>
+                <td id="weight1">- </td>
+                <td id="weight2"> -</td>
+            </tr>
+            <tr class="bg-light">
+                <th>Display Size</th>
+                <td id="dsize1">- </td>
+                <td id="dsize2"> -</td>
+            </tr>
+            <tr class="bg-light">
+                <th>Display Type</th>
+                <td id="dtype1">- </td>
+                <td id="dtype2"> -</td>
+            </tr>
+            <tr class="bg-light">
+                <th>Screen Resolution</th>
+                <td id="sresolute1">- </td>
+                <td id="sresolute2"> -</td>
+            </tr>
+            <tr class="bg-light">
+                <th>Processor</th>
+                <td id="processor1">- </td>
+                <td id="processor2"> -</td>
+            </tr>
+            <tr class="bg-light">
+                <th>FingerPrint Sensor</th>
+                <td id="fingerprint1">- </td>
+                <td id="fingerprint2"> -</td>
+            </tr>
+            <tr class="bg-light">
+                <th>FingerPrint Sensor Position</th>
+                <td id="fingerprint-position1">- </td>
+                <td id="fingerprint-position2"> -</td>
+            </tr>
+            <tr class="bg-light">
+                <th>Face Unlock</th>
+                <td id="face-u1">- </td>
+                <td id="face-u2"> -</td>
+            </tr>
+            <tr class="bg-light">
+                <th>Audio Jack</th>
+                <td id="audio-j1">- </td>
+                <td id="audio-j2"> -</td>
+            </tr>
+
+
+
+            <tr class="bg-light">
+                <th>Launch Date</th>
+                <td id="date1">- </td>
+                <td id="date2"> -</td>
+            </tr>
+            <tr class="bg-light">
+                <th>Product Description</th>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quas nihil aut! Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Nesciunt rem perferendis debitis minima nemo porro,
+                    quidem veritatis corporis ratione delectus. </td>
+                <td> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aspernatur sequi odit beatae,
+                    reprehenderit recusandae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat est
+                    delectus commodi? Non suscipit unde neque aperiam cupiditate?</td>
+            </tr>
+        </table>
+
+    </div>
+
+
+    <!-- <footer> -->
+    <iframe src="./scss/index_foot.html" frameborder="0" width="100%" height="348px"></iframe>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+<script src="./laptop_details.js"></script>
+<script>
+
+    //display names on screens
+    for (let i = 1; i < product.length; i++) {
+        document.getElementById('slct1').innerHTML += ` 
+          <option value="${i}">${product[i].title}</option>`;
+    }
+    for (let i = 1; i < product.length; i++) {
+        document.getElementById('slct2').innerHTML += ` 
+          <option value="${i}">${product[i].title}</option>`;
+    }
+
+    //display names on screens
+    function item1(a) {
+        var b = document.getElementById('slct2').value;
+        if (a != b) {
+            document.getElementById("img1").src = product[a].image
+            document.getElementById("price1").innerHTML = product[a].price
+            document.getElementById("brand1").innerHTML = product[a].brand
+            document.getElementById("model1").innerHTML = product[a].model
+            document.getElementById("os1").innerHTML = product[a].os
+            document.getElementById("batry1").innerHTML = product[a].battery
+            document.getElementById("storage1").innerHTML = product[a].storage
+            document.getElementById("ram1").innerHTML = product[a].RAM
+            document.getElementById("camera1").innerHTML = product[a].camera
+            document.getElementById("5g1").innerHTML = product[a].g5
+            document.getElementById("rr1").innerHTML = product[a].rr
+            document.getElementById("weight1").innerHTML = product[a].weight
+            document.getElementById("usb-t1").innerHTML = product[a].usbt
+            document.getElementById("fast-charge1").innerHTML = product[a].fastcharge
+            document.getElementById("dsize1").innerHTML = product[a].displaysize
+            document.getElementById("dtype1").innerHTML = product[a].displaytype
+            document.getElementById("sresolute1").innerHTML = product[a].sresolution
+            document.getElementById("processor1").innerHTML = product[a].processor
+            document.getElementById("fingerprint1").innerHTML = product[a].fingerprint
+            document.getElementById("fingerprint-position1").innerHTML = product[a].fingerprintposition
+            document.getElementById("face-u1").innerHTML = product[a].faceu
+            document.getElementById("audio-j1").innerHTML = product[a].audiojack
+            document.getElementById("date1").innerHTML = product[a].date
+            document.getElementById("name1").innerHTML = product[a].title
+        }
+        else {
+            document.getElementById("img1").src = product[0].image
+            alert("You Alredy Selected");
+            document.getElementById('slct1').selectedIndex = "Select---"
+            document.getElementById("price1").innerHTML = "-"
+            document.getElementById("brand1").innerHTML = "-"
+            document.getElementById("model1").innerHTML = "-"
+            document.getElementById("os1").innerHTML = "-"
+            document.getElementById("batry1").innerHTML = "-"
+            document.getElementById("storage1").innerHTML = "-"
+            document.getElementById("ram1").innerHTML = "-"
+            document.getElementById("camera1").innerHTML = "-"
+            document.getElementById("5g1").innerHTML = "-"
+            document.getElementById("rr1").innerHTML = "-"
+            document.getElementById("weight1").innerHTML = "-"
+            document.getElementById("usb-t1").innerHTML = "-"
+            document.getElementById("fast-charge1").innerHTML = "-"
+            document.getElementById("dsize1").innerHTML = "-"
+            document.getElementById("dtype1").innerHTML = "-"
+            document.getElementById("sresolute1").innerHTML = "-"
+            document.getElementById("processor1").innerHTML = "-"
+            document.getElementById("fingerprint1").innerHTML = "-"
+            document.getElementById("fingerprint-position1").innerHTML = "-"
+            document.getElementById("face-u1").innerHTML = "-"
+            document.getElementById("audio-j1").innerHTML = "-"
+            document.getElementById("date1").innerHTML = "-"
+            document.getElementById("name1").innerHTML = "-"
+        }
+    }
+
+    function item2(a) {
+        var b = document.getElementById('slct1').value;
+        if (a != b) {
+            document.getElementById("img2").src = product[a].image
+            document.getElementById("price2").innerHTML = product[a].price
+            document.getElementById("brand2").innerHTML = product[a].brand
+            document.getElementById("model2").innerHTML = product[a].model
+            document.getElementById("os2").innerHTML = product[a].os
+            document.getElementById("batry2").innerHTML = product[a].battery
+            document.getElementById("storage2").innerHTML = product[a].storage
+            document.getElementById("ram2").innerHTML = product[a].RAM
+            document.getElementById("camera2").innerHTML = product[a].camera
+            document.getElementById("5g2").innerHTML = product[a].g5
+            document.getElementById("rr2").innerHTML = product[a].rr
+            document.getElementById("weight2").innerHTML = product[a].weight
+            document.getElementById("usb-t2").innerHTML = product[a].usbt
+            document.getElementById("fast-charge2").innerHTML = product[a].fastcharge
+            document.getElementById("dsize2").innerHTML = product[a].displaysize
+            document.getElementById("dtype2").innerHTML = product[a].displaytype
+            document.getElementById("sresolute2").innerHTML = product[a].sresolution
+            document.getElementById("processor2").innerHTML = product[a].processor
+            document.getElementById("fingerprint2").innerHTML = product[a].fingerprint
+            document.getElementById("fingerprint-position2").innerHTML = product[a].fingerprintposition
+            document.getElementById("face-u2").innerHTML = product[a].faceu
+            document.getElementById("audio-j2").innerHTML = product[a].audiojack
+            document.getElementById("date2").innerHTML = product[a].date
+            document.getElementById("name2").innerHTML = product[a].title
+        }
+        else {
+            document.getElementById("img2").src = product[0].image
+            alert("You Alredy Selected");
+            document.getElementById('slct2').selectedIndex = "Select---"
+            // document.getElementById('slct2').innerHTML = "Select---"
+            document.getElementById("price2").innerHTML = "-"
+            document.getElementById("brand2").innerHTML = "-"
+            document.getElementById("model2").innerHTML = "-"
+            document.getElementById("os2").innerHTML = "-"
+            document.getElementById("batry2").innerHTML = "-"
+            document.getElementById("storage2").innerHTML = "-"
+            document.getElementById("ram2").innerHTML = "-"
+            document.getElementById("camera2").innerHTML = "-"
+            document.getElementById("5g2").innerHTML = "-"
+            document.getElementById("rr2").innerHTML = "-"
+            document.getElementById("weight2").innerHTML = "-"
+            document.getElementById("usb-t2").innerHTML = "-"
+            document.getElementById("fast-charge2").innerHTML = "-"
+            document.getElementById("dsize2").innerHTML = "-"
+            document.getElementById("dtype2").innerHTML = "-"
+            document.getElementById("sresolute2").innerHTML = "-"
+            document.getElementById("processor2").innerHTML = "-"
+            document.getElementById("fingerprint2").innerHTML = "-"
+            document.getElementById("fingerprint-position2").innerHTML = "-"
+            document.getElementById("face-u2").innerHTML = "-"
+            document.getElementById("audio-j2").innerHTML = "-"
+            document.getElementById("date2").innerHTML = "-"
+            document.getElementById("name2").innerHTML = "-"
+        }
+    }
+</script>
+
+</html>

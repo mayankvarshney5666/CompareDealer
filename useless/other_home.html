@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link href="search-filter.css" rel="stylesheet"> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" /> -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css" rel="stylesheet" /> -->
+    <style>
+        /* .container-left {
+      text-align: left;
+    }
+     */
+        .one_hr {
+            width: 100%;
+            height: 1.5px;
+            padding-top: 3px;
+            background-color: rgb(23, 254, 131);
+        }
+
+        .two_hr {
+            width: 50%;
+            height: 2px;
+            /* padding-top: 5px; */
+            background-color: black;
+        }
+
+        h1.left {
+            padding-left: 12vh;
+            padding-top: 10px;
+
+        }
+
+        img {
+            padding-left: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+            <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
+            </svg>
+            <span class="font-semibold text-xl tracking-tight">Campare Dealer</span>
+        </div>
+        <div class="block lg:hidden">
+            <button
+                class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                </svg>
+            </button>
+        </div>
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+            <div class="text-sm lg:flex-grow">
+                <a href="#responsive-header"
+                    class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                    Home
+                </a>
+                <a href="#responsive-header"
+                    class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                    Products
+                </a>
+                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
+                    About
+                </a>
+            </div>
+
+            <div>
+                <a href="#"
+                    class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Customer
+                    Sign In</a>
+            </div>
+
+        </div>
+    </nav>
+    <!-- <br> -->
+    <hr class="one_hr">
+    <br><br><br>
+    <div>
+        <center>
+
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Campare Products
+            </h1>
+            <hr class="two_hr" align="center">
+        </center>
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 left">Headphones</h1>
+
+    </div>
+    <!-- <div class="flex flex-col text-center w-full mb-20">
+    <h1 class="text-2xl font-medium title-font mb-4 text-gray-900">OUR TEAM</h1>
+    <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn
+      asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
+  </div> -->
+
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                            src="./Content/om-177.jpg">
+                        <div class="w-full">
+
+                            <!-- Text Here -->head
+                        </div>
+                    </div>
+                </div>
+
+                <!-- images1 -->
+
+
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                            src="./Content/90919456.webp">
+                        <div class="w-full">
+                            hes
+
+                        </div>
+                    </div>
+                </div>
+                <!-- images1 -->
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                            src="./Content/90919755.webp">
+                        <div class="w-full">bdsf
+
+                        </div>
+                    </div>
+                </div>
+                <!-- images1 -->
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                            src="./Content/90919591.webp">
+                        <div class="w-full">
+                            sebf
+                        </div>
+                    </div>
+                </div>
+                <!-- images1 -->
+    </section>
+
+</body>
+
+</html>

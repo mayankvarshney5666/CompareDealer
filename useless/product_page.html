@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Products</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <style>
+        * {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            text-transform: capitalize;
+            text-align: center;
+        }
+
+        .container .slide-container.active {
+            display: block;
+        }
+
+        .container .slide-container .slide {
+            min-height: 50vh;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px 10%;
+            padding-bottom: 10px;
+        }
+
+        .container .slide-container .slide .image {
+            flex: 1 1 500px;
+        }
+
+        .container .slide-container .slide .content h3 {
+            font-size: 35px;
+            color: #333;
+            text-align: center;
+        }
+
+        .container .slide-container .slide .content p {
+            font-size: 16px;
+            color: #666;
+            padding: 10px 0;
+            text-align: left;
+        }
+
+        .container .slide-container .slide .content .btn {
+            margin-top: 10px;
+            display: inline-block;
+            background: #666;
+            color: white;
+            font-size: 17px;
+            padding: 9px 40px;
+        }
+
+        .container .slide-container .slide .content .btn:hover {
+            background: rgb(231, 230, 230);
+
+        }
+
+        .container .slide-container .slide .image:hover {
+            transform: scale(1.2);
+        }
+
+
+
+        img {
+            width: 70%;
+        }
+
+        img {
+            float: right;
+            margin-bottom: 20px;
+        }
+
+        .container .slide-container .slide .image:nth-child(2) {
+            float: left;
+        }
+
+        section {
+            font-size: 50px;
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        .two_hr {
+            width: 100%;
+            height: 2px;
+            margin-top: 10px;
+            background-color: black;
+
+        }
+
+        .iframe {
+            margin-top: 100px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!--Nav-->
+    <!-- <nav class="navbar  navbar-expand-sm navbar-dark bg-black">
+        <div class="container">
+            <a href="./homepage_.html" class="navbar-brand">Campare Dealer</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="./homepage_.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Services</a>
+                        </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./aboutUs.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Contact _.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fas fa-shopping-cart fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+    <!--End of NAv-->
+    <iframe src="Navbar.html" frameborder="0" width="100%" height="70px"></iframe>
+
+
+
+    <section>
+        Popular Products
+
+        <hr class="two_hr">
+    </section>
+    <br>
+
+
+    <div class="container">
+        <div class="slide-container active">
+            <div class="slide">
+                <div class="content">
+                    <h3>Laptops</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Iste, aperiam vel ullam deleniti
+                        reiciendis ratione quod aliquid inventore vero perspiciatis.
+                    </p>
+                    <a href="./campare_laptop.html" class="btn">Know More</a>
+                </div>
+                <div class="image">
+                    <a href="./campare_laptop.html">
+                        <img src="Content/laptops.jpeg" alt="image">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- <br> -->
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content mobile">
+                    <h3>Mobile Phones</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aperiam <br> vel ullam deleniti
+                        reiciendis ratione quod aliquid inventore vero perspiciatis.
+                    </p>
+                    <a href="./aboutUs.html" class="btn">Know More</a>
+                </div>
+                <div class="image">
+                    <img src="Content/mobile.jpeg" alt="image">
+                </div>
+            </div>
+        </div>
+        <!-- <br> -->
+        <div class="slide-container ">
+            <div class="slide">
+                <div class="content">
+                    <h3>Headphones</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, <br> aperiam vel ullam deleniti
+                        reiciendis ratione quod aliquid inventore vero perspiciatis.
+                    </p>
+                    <a href="./campare_headphone.html" class="btn">Know More</a>
+                </div>
+                <div class="image">
+                    <a href="./campare_headphone.html">
+                        <img src="Content/headphones2.webp">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- <br> -->
+        <div class="slide-container ">
+            <div class="slide">
+                <div class="content">
+                    <h3>TVs</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aperiam vel <br> ullam deleniti
+                        reiciendis ratione quod aliquid inventore vero perspiciatis.
+                    </p>
+                    <a href="./aboutUs.html" class="btn">Know More</a>
+                </div>
+                <div class="image">
+                    <img src="Content/product.png" alt="image">
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <iframe class="iframe" src="./scss/index_foot.html" frameborder="0" width="100%" height="350px"></iframe>
+</body>
+
+</html>

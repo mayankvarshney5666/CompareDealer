@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="homepage_.css">
+
+
+    <style>
+        .container .slide-container:nth-child(1) .slide {
+            background: linear-gradient(90deg, #f9f9f9 70%, #f9f9f9 30.1%);
+        }
+
+        .container .slide-container:nth-child(2) .slide {
+            background: linear-gradient(90deg, #f9f9f9 70%, #f9f9f9 30.1%);
+        }
+
+        .container .slide-container:nth-child(3) .slide {
+            background: linear-gradient(90deg, #f9f9f9 70%, #f9f9f9 30.1%);
+        }
+
+        .container .slide-container:nth-child(4) .slide {
+            background: linear-gradient(90deg, #f9f9f9 70%, #f9f9f9 30.1%);
+        }
+
+        /* .container .slide-container {
+            display: none;
+
+        } */
+
+        .container .slide-container.active {
+            display: block;
+        }
+
+        .container .slide-container .slide .content .btn:hover {
+            background: #333;
+
+        }
+
+        * {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+
+        /* .container {
+            position: relative;
+        } */
+
+        .container .slide-container .slide {
+            min-height: 50vh;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px 10%;
+            padding-bottom: 10px;
+        }
+
+        .container .slide-container .slide .image {
+            flex: 1 1 500px;
+        }
+
+        .container .slide-container .slide .content h3 {
+            font-size: 35px;
+            color: #333;
+        }
+
+        .container .slide-container .slide .content p {
+            font-size: 16px;
+            color: #666;
+            padding: 10px 0;
+        }
+
+        .container .slide-container .slide .content .btn {
+            margin-top: 10px;
+            display: inline-block;
+            background: #666;
+            color: white;
+            font-size: 17px;
+            padding: 9px 40px;
+        }
+
+        .container .slide-container .slide .content .btn:hover {
+            background: #333;
+
+        }
+
+        /* .container #prev,
+        .container #next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #fff;
+            background: #333;
+            height: 50px;
+            width: 40px;
+            line-height: 50px;
+            font-size: 25px;
+            text-align: center;
+            cursor: pointer;
+            font-weight: bolder;
+        } */
+
+        /* .container #prev:hover,
+        .container #next:hover {
+            background: #666;
+        } */
+
+        center {
+            font-size: 50px;
+            margin-top: 25px;
+
+        }
+
+        .two_hr {
+            width: 50%;
+            height: 2px;
+            /* padding-top: 5px; */
+            background-color: black;
+        }
+
+        .container .slide-container:nth-child(odd) .slide .image {
+            float: right;
+        }
+
+
+        img {
+            float: right;
+        }
+
+        .container .slide-container:nth-child(even) .slide .image {
+            /* background: linear-gradient(90deg, #f9f9f9 70%, #666 30.1%); */
+            float: left;
+        }
+
+        /* img {
+            float: left;
+        } */
+
+        img {
+            width: 60%;
+        }
+
+        /* h3,
+        p,
+        a  {
+            float: left;
+        } */
+    </style>
+</head>
+
+
+<body>
+
+    <!--Nav-->
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-black">
+        <div class="container">
+            <a href="./homepage_.html" class="navbar-brand">Campare Dealer</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="./homepage_.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a href="#" class="nav-link">Services</a>
+                        </li> -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./aboutUs.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Contact _.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fas fa-shopping-cart fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--End of NAv-->
+
+
+    <center>
+        Popular Products
+
+        <hr class="two_hr">
+    </center>
+    <br>
+
+
+    <div class="container">
+        <div class="slide-container active">
+            <div class="slide">
+                <div class="content">
+                    <h3>Laptops</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Iste, aperiam vel ullam deleniti
+                        reiciendis ratione quod aliquid inventore vero perspiciatis.
+                    </p>
+                    <a href="#" class="btn">Know More</a>
+                </div>
+                <div class="image">
+                    <img src="images/laptops.jpeg" alt="image">
+                </div>
+            </div>
+        </div>
+        <!-- <br> -->
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content">
+                    <h3>Mobile Phones</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aperiam <br> vel ullam deleniti
+                        reiciendis ratione quod aliquid inventore vero perspiciatis.
+                    </p>
+                    <a href="#" class="btn">Know More</a>
+                </div>
+                <div class="image">
+                    <img src="images/mobile.jpeg" alt="image">
+                </div>
+            </div>
+        </div>
+        <!-- <br> -->
+        <div class="slide-container ">
+            <div class="slide">
+                <div class="content">
+                    <h3>Headphones</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, <br> aperiam vel ullam deleniti
+                        reiciendis ratione quod aliquid inventore vero perspiciatis.
+                    </p>
+                    <a href="#" class="btn">Know More</a>
+                </div>
+                <div class="image">
+                    <img src="images/headphones2.webp" image">
+                </div>
+            </div>
+        </div>
+        <!-- <br> -->
+        <div class="slide-container ">
+            <div class="slide">
+                <div class="content">
+                    <h3>TVs</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aperiam vel <br> ullam deleniti
+                        reiciendis ratione quod aliquid inventore vero perspiciatis.
+                    </p>
+                    <a href="#" class="btn">Know More</a>
+                </div>
+                <div class="image">
+                    <img src="images/tv.jpeg" alt="image">
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <iframe src="./scss/index_foot.html" frameborder="0" width="100%" height="auto"></iframe>
+
+
+</body>
+<!-- <script src="script.js"></script> -->
+
+</html>

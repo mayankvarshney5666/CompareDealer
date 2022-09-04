@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Campare HeadPhones</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        td>img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+        }
+
+        .navbar .nav-link {
+            /* font-size: 14px; */
+            text-transform: uppercase;
+            padding-left: 14px !important;
+            padding-right: 14px !important;
+        }
+
+        .navbar-toggler {
+            outline: none !important;
+        }
+
+        .bg-black {
+            background: #000;
+        }
+
+        iframe {
+            margin-top: 20px;
+        }
+    </style>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Nav-->
+    <nav class="navbar fixed- navbar-expand-sm navbar-dark bg-black">
+        <div class="container">
+            <a href="./homepage_.html" class="navbar-brand">Campare Dealer</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="./homepage_.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a href="#" class="nav-link">Services</a>
+                        </li> -->
+                    <li class="nav-item">
+                        <a href="./product_p.html" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./aboutUs.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contact__.htm" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a href="./product_p.html" class="nav-link"><i class="fas fa-shopping-cart fa-2x"></i></a> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--End of NAv-->
+
+    <h1 class="display-5 text-center my-5 green">Campare Headphones by Selection</h1>
+    <!-- <div class="container"> -->
+    <!-- <div class="col-md-9 mx-auto"> -->
+
+
+    <table class="table">
+        <tr class="bg-light">
+            <th>Select Product</th>
+            <th width="35%">
+                <select class="form-control" id="select1" onchange="item1(this.value)">
+                    <option value="0">-- Select Anyone --</option>
+                </select>
+            </th>
+            <th width="35%">
+                <select class="form-control" id="select2" onchange="item2(this.value)">
+                    <option value="0">-- Select Anyone --</option>
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th>Product Image</th>
+            <td>
+                <img src="./image/blank.jpg" id="img1" alt="">
+            </td>
+            <td>
+                <img src="./image/blank.jpg" id="img2" alt="">
+            </td>
+        </tr>
+
+
+        <tr>
+            <th>Product Price</th>
+            <td id="price1">N/A</td>
+            <td id="price2">N/A</td>
+        </tr>
+
+        <tr>
+            <th>Headphone Type</th>
+            <td id="head1">N/A</td>
+            <td id="head2">N/A</td>
+        </tr>
+
+        <tr>
+            <th> Batteries Required</th>
+            <td id="bat1">N/A</td>
+            <td id="bat2">N/A</td>
+        </tr>
+
+        <tr>
+            <th>Product Description</th>
+            <td id="desc1">N/A</td>
+            <td id="desc2">N/A</td>
+        </tr>
+
+        <tr>
+            <th>Product Brand</th>
+            <td id="brand1">N/A</td>
+            <td id="brand2">N/A</td>
+        </tr>
+
+
+
+
+    </table>
+
+
+
+
+    </div>
+    </div>
+
+
+    <!-- <footer> -->
+    <iframe src="./scss/index_foot.html" frameborder="0" width="100%" height="348px"></iframe>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<script src="./headphones_data.js"> </script>
+
+<script>
+    for (var i = 1; i < product.length; i++) {
+        document.getElementById("select1").innerHTML += `
+        <option value = "${i}">${product[i].title}</option>
+        `;
+        document.getElementById("select2").innerHTML += `
+        <option value = "${i}">${product[i].title}</option>
+        `;
+    }
+
+    function item1(a) {
+        document.getElementById("select1").value;
+        if (a != select2) {
+            document.getElementById("img1").src = product[a].image
+            document.getElementById("price1").innerHTML = product[a].price
+            document.getElementById("head1").innerHTML = product[a].head
+            document.getElementById("bat1").innerHTML = product[a].battery
+            document.getElementById("desc1").innerHTML = product[a].description
+            document.getElementById("brand1").innerHTML = product[a].brand
+
+        }
+        else {
+            document.getElementById("select1").selectIndex = 0;
+            document.getElementById("img1").src = product[a].image
+            document.getElementById("price1").innerHTML = " "
+            document.getElementById("head1").innerHTML = " "
+            document.getElementById("bat1").innerHTML = " "
+            document.getElementById("desc1").innerHTML = " "
+            document.getElementById("brand1").innerHTML = " "
+
+        }
+    }
+    function item2(a) {
+        document.getElementById("select2").value;
+        if (a != select1) {
+            document.getElementById("img2").src = product[a].image
+            document.getElementById("price2").innerHTML = product[a].price
+            document.getElementById("head2").innerHTML = product[a].head
+            document.getElementById("bat2").innerHTML = product[a].battery
+            document.getElementById("desc2").innerHTML = product[a].description
+            document.getElementById("brand2").innerHTML = product[a].brand
+
+
+        }
+        else {
+            document.getElementById("img2").src = product[a].image
+            document.getElementById("price2").innerHTML = " "
+            document.getElementById("head2").innerHTML = " "
+            document.getElementById("bat2").innerHTML = " "
+            document.getElementById("desc2").innerHTML = " "
+            document.getElementById("brand2").innerHTML = " "
+
+
+        }
+
+    }
+</script>

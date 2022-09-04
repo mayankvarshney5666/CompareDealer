@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="product_p.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            text-align: center;
+
+        }
+
+        section {
+            font-size: 50px;
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        .two_hr {
+            width: 100%;
+            height: 2px;
+            margin-top: 10px;
+            background-color: black;
+            padding-left: 100px;
+            padding-right: 100px;
+
+        }
+
+        .iframe1 {
+            margin-top: 100px;
+            border: 1px solid black;
+        }
+
+        .total {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .content {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+
+        /* for responsive page */
+
+        @media only screen and (min-width: 600px) {
+
+
+            /* For tablets: */
+            .col-s-1 {
+                width: 8.33%;
+            }
+
+            .col-s-2 {
+                width: 16.66%;
+            }
+
+            .col-s-3 {
+                width: 25%;
+            }
+
+            .col-s-4 {
+                width: 33.33%;
+            }
+
+            .col-s-5 {
+                width: 41.66%;
+            }
+
+            .col-s-6 {
+                width: 50%;
+            }
+
+            .col-s-7 {
+                width: 58.33%;
+            }
+
+            .col-s-8 {
+                width: 66.66%;
+            }
+
+            .col-s-9 {
+                width: 75%;
+            }
+
+            .col-s-10 {
+                width: 83.33%;
+            }
+
+            .col-s-11 {
+                width: 91.66%;
+            }
+
+            .col-s-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            /* For desktop: */
+            img {
+                width: 200px;
+                height: auto;
+            }
+
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        .navbar .nav-link {
+            /* font-size: 14px; */
+            text-transform: uppercase;
+            padding-left: 14px !important;
+            padding-right: 14px !important;
+        }
+
+        .navbar-toggler {
+            outline: none !important;
+        }
+
+        .bg-black {
+            background: #000;
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <iframe src="Navbar.html" frameborder="0" width="100%" height="70px"></iframe>
+
+
+    <!--Nav-->
+    <!-- <nav class="navbar fixed- navbar-expand-sm navbar-dark bg-black">
+        <div class="container">
+            <a href="./homepage_.html" class="navbar-brand">Campare Dealer</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="./homepage_.html" class="nav-link">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./product_p.html" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./aboutUs.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contact__.htm" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./product_p.html" class="nav-link"><i class="fas fa-shopping-cart fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+    <!--End of NAv-->
+
+
+
+    <!-- Product Slider -->
+    <!-- <iframe src="./product_slider.html" frameborder="0" width="100%" height="630px"></iframe> -->
+
+    <section class="col-12">
+        Popular Products
+
+    </section>
+    <hr class="two_hr" width="50%">
+    <br>
+
+    <div class="total">
+
+        <div class="container">
+            <div class="slide-container">
+                <div class="slide">
+
+                    <div class="image">
+                        <a href="./laptop_page.html">
+
+                            <img class="" src="./Content/laptops.jpeg" alt="image">
+                        </a>
+                    </div>
+                    <br>
+                    <div class="content col-6">
+                        <h3>Laptops</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aperiam vel ullam deleniti
+                            <br>
+                            reiciendis ratione quod aliquid inventore vero perspiciatis.
+                            <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate esse pariatur
+                            recusandae
+                            ex, possimus incidunt. Reiciendis quisquam ipsum, eum .
+                        </p>
+                        <p> ucimus culpa accusamus
+                            dolorum similique, illo quibusdam sed, consectetur nobis.
+                        </p>
+                        <!-- <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked "></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        
+                    </ul> -->
+                        <a href="./laptop_page.html" class="btn">
+                            Know More
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-container">
+
+                <div class="slide">
+                    <div class="content col-6">
+                        <h3>Mobile Phones</h3>
+                        <p>Lorem ipsum dolor sit am
+                            bret consectetur adipisicing elit. Iste, aperiam vel ullam
+                            deleniti
+                            reiciendis ratione quod aliquid inventore vero perspiciatis.
+                            <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores beatae quis quam
+                            corrupti ab, illum repellat nam deserunt. Maiores et eligendi at nulla nesciunt ullam ipsam
+                            molestiae eum ab incidunt.
+                            <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus assumenda veritatis ut!
+                        </p>
+                        <!-- <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked "></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        
+                    </ul> -->
+                        <a href="./comapre_page.html" class="btn">Know More</a>
+                    </div>
+                    <br>
+                    <div class="image ">
+                        <a href="./comapre_page.html">
+                            <img class="" src="./Content/mobile.jpeg" alt="image">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="slide-container ">
+                <div class="slide">
+
+                    <div class="image ">
+                        <a href="./headphones_page.html">
+
+                            <img class="" src="./Content/headphones2.png" alt="image">
+                        </a>
+                    </div>
+                    <br>
+                    <div class="content col-6">
+                        <h3>Headphones</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aperiam vel ullam deleniti
+                            reiciendis ratione quod aliquid inventore vero perspiciatis.
+                            <br>dolor sit amet consectetur adipisicing elit. Minus assumenda veritatis ut!
+                        <p>
+                            Esse, veniam animi. Expedita ex doloremque magni perspiciatis vel illo labore, corporis
+                            error repellat esse, nostrum neque!
+                        </p>
+                        </p>
+                        <!-- <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked "></i></li>
+                        <li><i class="fa fa-star checked "></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        
+                    </ul> -->
+                        <a href="./headphones_page.html" class="btn">Know More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-container ">
+                <div class="slide">
+                    <div class="content col-6">
+                        <h3>Televisions</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aperiam vel ullam deleniti
+                            reiciendis ratione quod aliquid inventore vero perspiciatis.
+                        </p>
+                        <p>
+                            Magnam excepturi, eaque voluptas ipsum necessitatibus nam rem tempore possimus soluta quae
+                            deleniti sit numquam nemo fugit inventore repellendus nesciunt consequatur similique!
+                        </p>
+                        <p>
+                            Labore aut nobis nisi cum culpa repellendus, voluptate nulla quas blanditiis neque eius illo
+                            nemo. Dolor saepe officiis vitae blanditiis suscipit corporis.
+                        </p>
+                        <!-- <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked "></i></li>
+                        <li><i class="fa fa-star "></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        
+                    </ul> -->
+                        <a href="./aboutUs.html" class="btn">Know More</a>
+                    </div>
+                    <br>
+                    <div class="image">
+                        <a href="#">
+                            <img class="" src="./Content/product.png" alt="image">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <iframe class="iframe1" src="./scss/index_foot.html" frameborder="0" width="100%" height="350px"></iframe>
+</body>
+
+</html>

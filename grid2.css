@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+main {
+    width: 100%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-rows: 300px 300px;
+    background-color: black;
+    /* grid-template-columns: repeat(2, 1.5fr) 350px;
+    grid-gap: 10px;
+    padding: 20px 70px;
+    margin: 10px; */
+}
+
+/* .div1 {
+    background-color: white;
+    background-image: url('./earphones.jpg');
+    background-repeat: no-repeat;
+    background-size: 420px 250px;
+} */
+
+.div1 {
+    /* background-color: rgb(223, 221, 221); */
+    background-image: url('./Content/gaminglaptop.webp');
+    background-repeat: no-repeat;
+    background-size: 400px 250px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 18px;
+    margin: 10px;
+}
+
+.div2 {
+    /* background-color: white; */
+    background: transparent;
+    background-image: url('./Content/laptop.jpg');
+    /* background-image: url('./Content/sony.jpg'); */
+    background-repeat: no-repeat;
+    background-size: 450px 320px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 18px;
+    margin: 10px;
+
+}
+
+.div3 {
+    /* background-color: white; */
+    grid-row: 1/span 3;
+    background-image: url('./Content/iphone_13_PNG29.png');
+    background-repeat: no-repeat;
+    background-size: 350px 550px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 18px;
+    margin: 10px;
+    grid-column: 3/4;
+
+}
+
+.div4 {
+    /* background-color: white; */
+    background-image: url('./Content/NicePng_mac-book-png_2177868.png');
+    background-repeat: no-repeat;
+    background-size: 450px 320px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 18px;
+    margin: 10px;
+
+}
+
+.div5 {
+    /* background-color: white; */
+    /* background-image: url('./Content/laptop.jpg'); */
+    background-image: url('./Content/sony.jpeg');
+    background-repeat: no-repeat;
+    background-size: 450px 320px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 18px;
+    margin: 10px;
+    padding: 50px;
+
+}
+
+.div1:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.div2:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.div3:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.div4:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.div5:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
