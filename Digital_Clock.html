@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="styleDC.css">
+
+</head>
+
+<body>
+    <div id="time">
+        <div class="circle" style="--clr:#22b64c;">
+            <div class="dots hr_dot"></div>
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="hh"></circle>
+            </svg>
+            <div id="hours">00</div>
+        </div>
+        <div class="circle" style="--clr:#5f29ff;">
+            <div class="dots min_dot"></div>
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="mm"></circle>
+            </svg>
+            <div id="minute">00</div>
+        </div>
+        <div class="circle" style="--clr:#e3e325;">
+            <div class="dots sec_dot"></div>
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="ss"></circle>
+            </svg>
+            <div id="second">00</div>
+        </div>
+        <div class="ap">
+            <div id="ampm">AM</div>
+        </div>
+    </div>
+
+    <script>
+        // function PrintTime() {
+
+        //     setInterval(PrintTime, 1000);
+        // }
+        // PrintTime();
+
+        setInterval(() => {
+            let hours = new Date().getHours();
+            let minute = new Date().getMinutes();
+            let second = new Date().getSeconds();
+
+            let hh = document.getElementById('hh');
+            let mm = document.getElementById('mm');
+            let ss = document.getElementById('ss');
+
+            let hr_dot = document.querySelector('.hr_dot');
+            let min_dot = document.querySelector('.min_dot');
+            let sec_dot = document.querySelector('.sec_dot');
+
+            let ampm;        //Both below methods are correct
+
+            // if (hours >= 12) {
+            //     ampm = "PM";
+            // }
+            // else {
+            //     ampm = "AM"
+            // }
+
+            //                  Or
+
+            ampm = hours >= 12 ? "PM" : "AM";
+
+            if (hours >= 12) {
+                hours = hours - 12;
+            }
+            if (hours < 10) {
+                hours = "0" + hours;
+            }         //or
+            // hours = hours < 10 ? "0" + hours : hours;
+            if (minute < 10) {
+                minute = "0" + minute;
+            }
+            if (second < 10) {
+                second = "0" + second;
+            }
+
+
+            document.getElementById('hours').innerHTML = hours + "<br><span>Hours</br></span>";
+            document.getElementById('minute').innerHTML = minute + "<br><span>Minutes</br></span>";
+            document.getElementById('second').innerHTML = second + "<br><span>Seconds</br></span>";
+            document.getElementById('ampm').innerHTML = ampm;
+
+            hh.style.strokeDashoffset = 440 - (440 * hours) / 12;
+            mm.style.strokeDashoffset = 440 - (440 * minute) / 60;
+            ss.style.strokeDashoffset = 440 - (440 * second) / 60;
+
+            hr_dot.style.transform = `rotate(${hours * 30}deg)`;
+            //360/12=30
+            min_dot.style.transform = `rotate(${minute * 6}deg)`;
+            sec_dot.style.transform = `rotate(${second * 6}deg)`;
+
+        });
+
+    </script>
+</body>
+
+</html>
