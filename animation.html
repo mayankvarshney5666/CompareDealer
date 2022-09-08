@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation In HTML</title>
+    <style>
+        a {
+            animation: bouncing 1s ease 0s infinite alternate;
+            background: sandybrown;
+            border-radius: 50%;
+            display: inline-block;
+            color: aliceblue;
+            cursor: help;
+            font-size: 5rem;
+            font-weight: 300;
+            letter-spacing: 0.2em;
+            padding: 1em 2em 1em;
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+            vertical-align: top;
+            margin-top: 250px;
+
+        }
+
+        @keyframes bouncing {
+            0% {
+                background-color: rgb(148, 207, 207);
+                bottom: 0;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.555);
+            }
+
+            30% {
+                background-color: aqua;
+                bottom: 50px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.555);
+            }
+
+            50% {
+                background-color: red;
+                bottom: 105px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.555);
+            }
+
+            65% {
+                background-color: rgb(255, 230, 0);
+                bottom: 150;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.555);
+            }
+
+            100% {
+                background-color: rgb(40, 61, 28);
+                bottom: 200px;
+                box-shadow: 0 50px 50px rgba(0, 0, 0, 0.151);
+            }
+        }
+    </style>
+</head>
+
+<body bgcolor="BlackWhite">
+    <a>Dumping Yeah!</a>
+</body>
+
+</html>
