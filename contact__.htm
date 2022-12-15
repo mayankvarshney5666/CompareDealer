@@ -65,29 +65,49 @@
                 <div class="col-md-7">
                     <div class="section-title">
                         <h2 class="hover-underline-animation">Contact Us</h2>
-                        <p><b>Lorem Ipsum is simply dummy text</b> Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                        <p><b>
+                                <!-- <h5> -->
+                                What would you like help with today? You can quickly take care of most things here,
+                                or
+                                connect with us when needed.
+                                <!-- </h5> -->
+                        </p></b>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-7">
-                    <form action="#" class="mb-4 mb-lg-0">
+                    <!-- <form action="#" class="mb-4 mb-lg-0"> -->
+                    <form action="https://formsubmit.co/devanshu.34601@tmu.ac.in" method="POST" class="mb-4 mb-lg-0">
+
                         <div class="form-row">
                             <div class="col-md-6 form-group">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" />
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                    required />
                             </div>
                             <div class="col-md-6 form-group">
-                                <input type="email" class="form-control" name="email" id="email"
+                                <input type="email" class="form-control" name="email" id="email" required
                                     placeholder="Your Email" />
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" />
+                            <input type="text" class="form-control" name="subject" required id="subject"
+                                placeholder="Subject" />
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control " name="message" placeholder="Type Message"></textarea>
+                            <textarea required class="form-control" name="message"
+                                placeholder="Type Message"></textarea>
                         </div>
+
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/homepage_.html">
+                        <input type="hidden" name="_template" value="table">
+
+                        <input type="hidden" name="_autoresponse" value="Thanks! For Your Submission">
+
+                        <!-- <input type="hidden" name="_cc" value="mayankvarshney5666@gmail.com"> -->
+
+
                         <button type="submit" class="btn btn-light">Submit</button>
                     </form>
                 </div>
